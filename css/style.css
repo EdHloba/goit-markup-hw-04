@@ -73,9 +73,6 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 .list {
   list-style: none;
@@ -178,7 +175,17 @@ body {
 */
 
 .hero {
-  background: var(--dark);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 188px 0;
   text-align: center;
 }
@@ -253,6 +260,14 @@ body {
   letter-spacing: 0.02em;
 }
 
+.services-icon {
+  background-color: var(--light);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 /**
   |============================
   | Gallery section
@@ -320,6 +335,49 @@ body {
   margin-bottom: 8px;
 }
 
+.team-card-text {
+  margin-bottom: 8px;
+}
+
+.team-links {
+  display: flex;
+  gap: 24px;
+  fill: #4d5ae5;
+}
+
+.team-links:hover {
+  fill: #404bbf;
+}
+/**
+  |============================
+  | Customers section
+  |============================
+*/
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item {
+  width: calc(100% / 6);
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  text-align: center;
+  padding: 16px 32px;
+}
+
+.customers-item:hover {
+  border: 1px solid #404bbf;
+}
+.customers-link {
+  fill: #8e8f99;
+}
+
+.customers-link:hover {
+  fill: #404bbf;
+}
+
 /**
   |============================
   | Footer section
@@ -328,6 +386,14 @@ body {
 .footer {
   background: var(--dark);
   padding: 100px 0;
+}
+
+.footer-section {
+  display: flex;
+}
+
+.logo {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -356,6 +422,28 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--accent);
+}
+
+.footer-subheader {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--white);
+
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  fill: #ffffff1a;
+}
+
+.footer-links:hover {
+  fill: var(--success);
 }
 
 /**
